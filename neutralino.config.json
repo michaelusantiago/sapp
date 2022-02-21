@@ -1,0 +1,48 @@
+{
+  "applicationId": "js.neutralino.sapp",
+  "version": "1.0.0",
+  "defaultMode": "window",
+  "port": 0,
+  "documentRoot": "/resources/",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "enableExtensions": true,
+  "tokenSecurity": "one-time",
+  "logging": {
+    "enabled": true,
+    "writeToLogFile": true
+  },
+  "modes": {
+    "window": {
+      "title": "sapp",
+      "fullScreen": false,
+      "alwaysOnTop": false,
+      "icon": "/resources/favicon.png",
+      "enableInspector": false,
+      "borderless": false,
+      "maximize": false,
+      "hidden": false,
+      "resizable": true,
+      "exitProcessOnClose": true 
+    }
+  },
+  "cli": {
+    "binaryName": "sapp",
+    "resourcesPath": "/resources/",
+    "extensionsPath": "/extensions/",
+    "clientLibrary": "/resources/neutralino.js",
+    "binaryVersion": "4.3.0",
+    "clientVersion": "3.2.0",
+    "frontendLibrary": {
+      "patchFile": "/svelte-app/public/index.html",
+      "devUrl": "http://localhost:8080"
+    }
+  },
+  "extensions": [
+    { 
+      "id": "js.neutralino.dbextension",
+      "command": "node ${NL_PATH}/extensions/main.js"
+    }
+  ]
+}

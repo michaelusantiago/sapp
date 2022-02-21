@@ -1,0 +1,6 @@
+/.data/
+/extensions/node_modules/
+/.tmp/
+/dist/
+neutralinojs.log
+/svelte-app/public/build/
