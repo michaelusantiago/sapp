@@ -4,6 +4,8 @@ const { v4: uuidv4 } = require('uuid');
 const chalk = require('chalk');
 const nba = require('./db')
 
+console.log('hey there @ extension, where is this printed?')
+
 // Obtain required params to start a WS connection from CLI args.
 const NL_PORT = argv['nl-port'];
 const NL_TOKEN = argv['nl-token'];
